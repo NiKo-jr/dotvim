@@ -1,4 +1,4 @@
-i"      .-.     .-.     .-.     .-.     .-.     .-.     .-.
+"      .-.     .-.     .-.     .-.     .-.     .-.     .-.
 " `._.'   `._.'   `._.'   `._.'   `._.'   `._.'   `._.'
 "
 " https://github.com/NiKo-jr/dotvim
@@ -129,3 +129,9 @@ endif
 
 " Loading configuration modules
 call s:source_file('general.vim')
+call s:source_file('filetype.vim')
+call s:source_file('mappings.vim')
+call s:source_file('theme.vim')
+set secure
+
+" vim: set ts=2 sw=2 tw=80 noet :
