@@ -9,4 +9,7 @@
 - repo: rafi/vim-badge
 - repo: thinca/vim-localrc
 - repo: christoomey/vim-tmux-navigator
+- repo: junegunn/vim-peekaboo
+- repo: tpope/vim-sleuth
+- repo: itchyny/vim-gitbranch
 

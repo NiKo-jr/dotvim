@@ -117,7 +117,7 @@ if dein#load_state(s:path)
 	endif
 endif
 
-" call s:source_file('plugins/all.vim')
+call s:source_file('plugins/all.vim')
 
 filetype plugin indent on
 syntax enable
