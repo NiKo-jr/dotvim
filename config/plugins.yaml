@@ -26,6 +26,9 @@
 # Languages
 # ---------
 
+- repo: pearofducks/ansible-vim
+  on_ft: [ ansible, ansible_hosts, ansible_template ]
+
 - repo: plasticboy/vim-markdown
   on_ft: markdown
   hook_add: |
@@ -48,3 +51,31 @@
     let g:gfm_syntax_enable_always = 0
     let g:gfm_syntax_highlight_emoji = 0
     let g:gfm_syntax_enable_filetypes = ['markdown']
+
+- { repo: vim-python/python-syntax, on_ft: python }
+- { repo: Vimjas/vim-python-pep8-indent, on_ft: python }
+- { repo: vim-scripts/python_match.vim, on_ft: python }
+- { repo: tmhedberg/SimpylFold, on_ft: python }
+- { repo: raimon49/requirements.txt.vim, on_ft: requirements }
+
+- { repo: vim-jp/syntax-vim-ex, on_ft: vim }
+
+- { repo: tpope/vim-git, on_ft: [ gitcommit, gitrebase, gitconfig ]}
+
+
+# ==========================================
+# Commands
+# --------
+- repo: scrooloose/nerdtree
+  depends: nerdtree-git-plugin
+  on_map: { n: <Plug> }
+  hook_post_source: source $VIMPATH/config/plugins/nerdtree.vim
+
+- { repo: Xuyuanp/nerdtree-git-plugin, on_source: nerdtree }
+- { repo: tpope/vim-commentary, on_map: <Plug>Commentary }
+- { repo: t9md/vim-choosewin, on_map: { n: <Plug> }}
+- { repo: Shougo/vinarise.vim, on_cmd: Vinarise }
+- { repo: kana/vim-niceblock, on_map: { x: <Plug> }}
+- { repo: guns/xterm-color-table.vim, on_cmd: XtermColorTable }
+- { repo: mbbill/undotree, on_cmd: undotreetoggle }
+- { repo: metakirby5/codi.vim, on_cmd: Codi, if: empty($VIM_MINIMAL) }
